@@ -1,7 +1,15 @@
+var defUrl = "http://192.168.1.141:8080/bash?comm=";
+
+function urlchange()
+{
+  ip = document.getElementById('ip').value;
+  defUrl = "http://"+ ip +":8080/bash?comm=";
+}
+
 function req()
 {
     lol = document.getElementById('lolz').value;
-    theUrl = "http://192.168.1.141:8080/bash?comm="+lol;
+    theUrl = defUrl + lol;
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = function() {
         console.log(xmlHttp.status);
