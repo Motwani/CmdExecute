@@ -39,13 +39,19 @@
     <body>
         <div class="app">
           <form>
+            <input type="text" name="ip" class="enter" value="" id="ip"/>
+            <input type="button" value="click" OnClick="urlchange()"/>
+          </form>
+          <form>
             <input type="text" name="enter" class="enter" value="" id="lolz"/>
             <input type="button" value="click" OnClick="req()"/>
           </form>
+          <input type="button" value="speak" OnClick="record()"/>
         </div>
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/call.js"></script>
+        <script type="text/javascript" src="js/speech.js"></script>
     </body>
 </html>
